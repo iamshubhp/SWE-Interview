@@ -3,3 +3,28 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  background: linear-gradient(45deg, #f06, #f9d, #aaf, #aaf);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
